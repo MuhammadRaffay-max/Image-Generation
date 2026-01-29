@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Image Generator — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="logo">AI Image Generator</div>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Create Stunning AI Images in Seconds</h1>
+        <p class="lead">Turn your imagination into art using powerful AI image generation</p>
+
+        <!-- Prompt search box -->
+        <div class="prompt-area">
+          <div class="prompt-box" role="search" aria-label="Image prompt">
+            <span class="prompt-icon" aria-hidden="true">
+              <!-- simple paint/ai svg icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+
+            <input id="prompt-input" type="search" placeholder="Describe the image you want to generate..." aria-label="Describe the image you want to generate" />
+
+            <button id="generate-btn" class="btn-gradient">Generate Image</button>
+          </div>
+
+          <!-- Prompt suggestion tags -->
+          <div class="prompt-tags" aria-hidden="false">
+            <button class="tag">Cyberpunk city at night</button>
+            <button class="tag">Realistic AI portrait</button>
+            <button class="tag">Anime character illustration</button>
+            <button class="tag">3D fantasy landscape</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image preview (UI only) -->
+    <section id="explore" class="previews container">
+      <h2 class="section-title">Preview Gallery</h2>
+      <div id="image-grid" class="image-grid" aria-live="polite">
+        <!-- 6 placeholder cards -->
+        <div class="img-card skeleton" style="width:400px;height:250px;overflow:hidden;"><img src="image/10.jpg" alt="img1" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="img-card skeleton" style="width:400px;height:250px;overflow:hidden;"><img src="image/11.jpg" alt="img2" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="img-card skeleton" style="width:400px;height:250px;overflow:hidden;"><img src="image/12.jpg" alt="img3" style="width:100%;height:100%;object-fit:cover;"></div>
+        <div class="img-card skeleton"></div>
+        <div class="img-card skeleton"></div>
+        <div class="img-card skeleton"></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container">
+      <h2 class="section-title">Why choose our AI</h2>
+      <div class="features-grid">
+        <article class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Image Generation</h3>
+          <p>Get results in seconds with optimized pipelines and lightweight models.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🖼️</div>
+          <h3>High Quality Output</h3>
+          <p>Rich details and refined visuals suitable for professional use.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Powered</h3>
+          <p>Smart prompts and style control to shape the result you want.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🎨</div>
+          <h3>Free & Easy to Use</h3>
+          <p>Simple UI with intuitive controls—no learning curve required.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 AI Image Generator. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
